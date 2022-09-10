@@ -557,7 +557,7 @@ body {
 /* ========== Підпишиться на розсилку --- підвал ========== */
 
 .subscribe-footer {
-  margin-left: 93px;
+  margin-left: auto;
   /* display: flex; */
 }
 .subscribe-form-title {
@@ -576,19 +576,19 @@ body {
   /* padding-bottom: 40px; */
 }
 .subscribe-form-field{
-/* display: block; */
+  margin-right: 12px;
+
 }
 .subscribe-form-title{
   display: flex;
 }
 .subscribe-form-input{
-  /* display: block; */
   box-sizing: border-box;
 /* position: absolute; */
   width: 358px;
   height: 50px;
   padding-left: 16px ;
-  margin-right: 12px;
+  /* margin-right: 12px; */
    background: none;
    color: #fff;
    border: 1px solid rgba(255, 255, 255, 0.3);
@@ -619,12 +619,11 @@ body {
   background-color: var(--button-color);
 }
 .subscribe-submit::after{
-  /* background: url(../images/send.svg); */
-  padding-left: 10px;
+   margin-left: 10px;
    display: block;
    content: url(../images/send.svg); /*обовязковий елемент якщо немає контенту, без нього не буде відображення  */
-   /* width: 100%; */
-   height: 13px;
+   width: 24px;
+   height: 24px;
    top: 13px;
    /* background: #cbd0d4; */
    /* border-radius: 2px; */
@@ -661,7 +660,7 @@ body {
   padding: 40px;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 581px;
+  /* height: 581px; */
   background-color: var(--white);
 
 }
@@ -694,8 +693,8 @@ body {
 .modal-form{
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
+  /* margin-bottom: 40px;
+  padding-bottom: 40px; */
 }
 
 .modal-form-title{
@@ -712,6 +711,7 @@ margin-bottom: 12px;
 }
 
 .modal-form-input{
+  font-size: 12px;
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -728,6 +728,7 @@ margin-bottom: 12px;
 }
 
 .modal-form-field{
+  display: block;
   margin-bottom: 10px;
 }
 
@@ -736,8 +737,8 @@ display: block;
 margin-bottom: 4px;
 /* font-style: normal; */
 /* font-weight: 400; */
-font-size: 14px;
-line-height: 1.71;
+font-size: 12px;
+line-height: 1.16;
 letter-spacing: 0.03em;
 color: #757575;
 
@@ -780,7 +781,7 @@ color: #757575;
 .modal-form-message::placeholder{
   /* text-transform: uppercase; */
    color: rgba(117, 117, 117, 0.5);
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .modal-form-message:focus{
@@ -791,6 +792,7 @@ color: #757575;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 2px;
   cursor: pointer;
+  border-color: #757575;
   /* background-color: #757575; */
   margin-right: 7px ;
 }
@@ -853,6 +855,16 @@ color: #757575;
 .modal-form-submit:hover,
 .modal-form-submit:focus {
   background-color: var(--button-color);
+}
+
+.modal-form-field-checkbox-link{
+  color: var(--accent-color);
+  transition: text-decoration var(--transition-dur-and-func);
+}
+
+.modal-form-field-checkbox-link:hover,
+.modal-form-field-checkbox-link:focus {
+  text-decoration: none;
 }
 
 
